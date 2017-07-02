@@ -29,7 +29,7 @@ a:link, a:visited {
 	-o-transition: all .15s linear;
 	-ms-transition: all .15s linear;
 	transition: all .15s linear;
-	color: #424242;
+	color: #2687fb;
 
 }
 
@@ -268,7 +268,7 @@ a:hover, a:active {
 
 .post {
 	background-color: #FFF;
-	margin: 30px;
+	margin: 20px;
 
 	.post-title{
 		h1 {
@@ -399,7 +399,7 @@ a:hover, a:active {
 
 
 .pagination {
-	margin: 30px;
+	margin: 20px;
 	padding: 0px 0 56px 0;
 	border-bottom: 1px solid #f2f2f2;
 
@@ -457,7 +457,7 @@ a:hover, a:active {
 }
 
 #disqus_thread {
-	margin: 30px;
+	margin: 20px;
 	border-bottom: 1px solid #f2f2f2;
 }
 
@@ -491,7 +491,7 @@ a:hover, a:active {
 }
 .list-with-title{
 	font-size: 14px;
-	margin: 30px;
+	margin: 20px;
 	padding: 0;
 	li {
         list-style-type: none;
@@ -578,14 +578,14 @@ a:hover, a:active {
 }
 /* about */
 .about{
-	margin: 30px;
+	margin: 20px;
 	h3{
 		font-size: 22px;
 	}
 }
 /* links*/
 .links{
-	margin: 30px;
+	margin: 20px;
 	h3{
 		font-size: 22px;
 	}
@@ -616,7 +616,7 @@ a:hover, a:active {
 /* 默认评论样式 */
 
 #fb_comments_container{
-	margin: 30px;
+	margin: 20px;
 }
 /* 按钮样式 */
 a.btn {
@@ -743,6 +743,138 @@ a.btn {
 	text-align:center;
 	padding-top:50px;
 }
+
+
+.content-post .content-post-comments {
+  border-top: .1rem solid #eee;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+.content-post-comments h4 {
+  font-size: .9rem;
+  margin-bottom: 1rem;
+}
+.content-post .content-post-comments .btn.btn-primary {
+  white-space: normal;
+}
+.content-post .content-post-comments .btn.btn-primary a {
+  color: #fff;
+  text-decoration: underline;
+}
+.isso-postbox .textarea-wrapper {
+  margin-bottom: -.4rem;
+}
+.isso-postbox .textarea-wrapper .textarea {
+  min-height: 4rem;
+}
+.isso-postbox .textarea-wrapper .textarea,
+.isso-postbox .auth-section .input-wrapper input {
+  background: #fafafa;
+  border: .1rem solid #eee;
+  border-radius: .2rem;
+  padding: .6rem .8rem;
+}
+.isso-postbox .textarea-wrapper .textarea:focus,
+.isso-postbox .auth-section .input-wrapper input:focus {
+  border-color: #999;
+  outline: none;
+}
+.isso-postbox .auth-section {
+  display: flex;
+  display: -ms-flexbox;
+}
+.isso-postbox .auth-section .input-wrapper {
+  flex: 1 1 25%;
+  padding-right: 2.5rem;
+  width: 25%;
+}
+.isso-postbox .auth-section .post-action {
+  -ms-flex: 1 1 25%;
+  flex: 1 1 25%;
+  width: 25%;
+}
+.isso-postbox .auth-section .post-action input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #2687fb;
+  border: .1rem solid #177ffb;
+  border-radius: .2rem;
+  color: #fff;
+  padding: .6rem;
+}
+.isso-postbox .auth-section .post-action input:focus {
+  background: #177ffb;
+  outline: none;
+}
+.isso-postbox .auth-section input {
+  width: 100%;
+}
+.isso-comment {
+  display: flex;
+  display: -ms-flexbox;
+  margin-top: 1rem;
+}
+.content-post-comments {
+  margin: 20px;
+}
+.content-post-comments .p{
+  line-height: 2.4rem;
+  margin: 0 0 1rem;
+}
+.isso-comment .avatar {
+  background: #ffffff;
+  margin-right: 1rem;
+  height: 2rem;
+  width: 2rem;
+}
+.isso-comment .avatar svg {
+  border-radius: 50%;
+  height: auto;
+  width: 100%;
+}
+.isso-comment .isso-comment-header .author {
+  font-weight: bolder;
+}
+.isso-comment .isso-comment-header .spacer {
+  color: #ccc;
+  margin-left: .3rem;
+  margin-right: .3rem;
+}
+.isso-comment .isso-comment-header .permalink {
+  color: #ccc;
+}
+.isso-comment .isso-comment-header .note {
+  margin-left: .5rem;
+}
+.isso-comment .upvote,
+.isso-comment .downvote {
+  display: inline-block;
+}
+.isso-comment .upvote svg,
+.isso-comment .downvote svg {
+  position: relative;
+  top: .4rem;
+}
+.isso-comment .reply:not(:first-child),
+.isso-comment .edit:not(:first-child),
+.isso-comment .cancel:not(:first-child),
+.isso-comment .delete:not(:first-child) {
+  font-size: .8rem;
+  margin-left: .5rem;
+}
+.isso-comment.isso-no-votes .votes {
+  display: none;
+}
+.text p{
+    line-height: 2.4rem;
+    margin: -10px 10px -10px;
+}
+.textarea{
+	font-size: 15px;
+	font-weight: 400;
+}
+
 @media screen and (max-width: 960px) {
 	.sidebar {
 		width: 100%;
@@ -781,5 +913,19 @@ a.btn {
 	.share{
 		display: grid;
 	}
-
+	.auth-section {
+		flex-direction: column;
+	}
+	.isso-postbox .auth-section .input-wrapper {
+		box-sizing: inherit;
+		box-sizing:border-box;
+		width: 113.5%;
+		margin: 1rem 0rem -.5rem 0rem;
+	}
+	.isso-postbox .auth-section .post-action{
+		width: 92.5%;
+	}
+	*, ::after, ::before {
+    box-sizing: inherit;
+	}
 }

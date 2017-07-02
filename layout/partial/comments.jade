@@ -1,25 +1,13 @@
 #container
 link(rel='stylesheet', href='https://static.xuanyu.li/style/default.css')
-script(src='https://static.xuanyu.li/js/gitment.browser.js')
-script.
-  const myTheme = {
-  render(state, instance) {
-    const container = document.createElement('div')
-    container.lang = "en-US"
-    container.className = 'gitment-container gitment-root-container'
-    container.appendChild(instance.renderHeader(state, instance))
-    container.appendChild(instance.renderEditor(state, instance))
-    container.appendChild(instance.renderComments(state, instance))
-    return container
-  },
-  }
-  var gitment = new Gitment({
-    theme: myTheme,
-    owner: 'ggggle',
-    repo: 'site-issue',
-    oauth: {
-      client_id: 'f055e6cdd5f1a513fedf',
-      client_secret: 'd1255a8bbc79e6f38af5b32dd4e678765da14a57',
-    },
-  })
-  gitment.render('container')
+script(data-isso='//xuanyu.li/isso', 
+data-isso-css='false', 
+src='//xuanyu.li/isso/js/embed.min.js',
+data-isso-reply-to-self="true",
+data-isso-require-author="true",
+data-isso-require-email="true",
+data-isso-max-comments-top="10",
+data-isso-max-comments-nested="5",
+data-isso-avatar="true"
+)
+section(id='isso-thread', class='content-post-comments')
