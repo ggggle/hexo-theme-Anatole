@@ -919,8 +919,9 @@ a.btn {
 	.isso-postbox .auth-section .input-wrapper {
 		box-sizing: inherit;
 		box-sizing:border-box;
-		width: 113.5%;
+		width: 100%;
 		margin: 1rem 0rem -.5rem 0rem;
+		padding-right: 0;
 	}
 	.isso-postbox .auth-section .post-action{
 		width: 92.5%;
