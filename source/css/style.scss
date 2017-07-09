@@ -797,8 +797,8 @@ a.btn {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #2687fb;
-  border: .1rem solid #177ffb;
+  background: #338ffd;
+  border: .1rem solid #338ffd;
   border-radius: .2rem;
   color: #fff;
   padding: .6rem;
@@ -924,7 +924,8 @@ a.btn {
 		padding-right: 0;
 	}
 	.isso-postbox .auth-section .post-action{
-		width: 92.5%;
+		width: 100%;
+		box-sizing: border-box;
 	}
 	*, ::after, ::before {
     box-sizing: inherit;
