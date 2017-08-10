@@ -52,41 +52,6 @@ a:hover, a:active {
   -o-animation-duration: 1s;
   animation-duration: 1s; }
 
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-20px); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0); } }
-@-moz-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -moz-transform: translateY(-20px); }
-  100% {
-    opacity: 1;
-    -moz-transform: translateY(0); } }
-@-o-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -o-transform: translateY(-20px); }
-  100% {
-    opacity: 1;
-    -o-transform: translateY(0); } }
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  -moz-animation-name: fadeInDown;
-  -o-animation-name: fadeInDown;
-  animation-name: fadeInDown; }
-
-/*animation ends*/
 .content {
   height: auto;
   float: right;
@@ -184,7 +149,7 @@ a:hover, a:active {
       color: #4786D6; }
 
 .post {
-  background-color: #FFF;
+  background-color: #fff;
   margin: 20px; }
   .post .post-title h1 {
     font-size: 30px;
@@ -215,13 +180,6 @@ a:hover, a:active {
     color: #4786D6; }
   .post .post-content a:hover {
     color: #2F69B3; }
-  .post .post-content h3 {
-    color: #5F5F5F;
-    font-size: 22px;
-    font-weight: 600; }
-  .post .post-content h4 {
-    color: #5F5F5F;
-    font-size: 16px; }
   .post .post-footer {
     padding: 0 0 30px 0;
     border-bottom: 1px solid #f2f2f2; }
