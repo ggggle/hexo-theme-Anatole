@@ -17,11 +17,11 @@ block content
     - var next = page.next ? page.next.path : false;
     .pagination
       ul.clearfix
-        if prev
-          li.pre.pagbuttons
-            a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('prev_post')
         if next
+          li.pre.pagbuttons
+            a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('prev_post')
+        if prev
           li.next.pagbuttons
-            a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
+            a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('next_post')
     if page.comments
         include partial/comments
